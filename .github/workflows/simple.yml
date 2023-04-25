@@ -15,4 +15,4 @@ jobs:
           npm -v
           
       - name: end of the job
-        run: echo "--- End of the job ---"
+        run: echo "--- End of the job!! ---"
