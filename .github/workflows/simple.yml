@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   run-shell-command:
+    name: run-shell-command-test-name
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
@@ -13,6 +14,12 @@ jobs:
         run: |
           node -v
           npm -v
-          
+
       - name: end of the job
         run: echo "--- End of the job!! ---"
+
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second job step one
+        run: echo "second job step one"
