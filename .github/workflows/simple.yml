@@ -1,4 +1,4 @@
-name: Shell Commands
+name: Simple.yml
 
 on: [workflow_dispatch]
 
