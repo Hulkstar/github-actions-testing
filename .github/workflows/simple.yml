@@ -1,6 +1,6 @@
 name: Shell Commands
 
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   run-shell-command:
@@ -23,3 +23,9 @@ jobs:
     steps:
       - name: second job step one
         run: echo "second job step one"
+
+  third-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output some Job Summary
+        run: echo '### It works! :rocket:' >> $GITHUB_STEP_SUMMARY
