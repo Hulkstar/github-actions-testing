@@ -28,4 +28,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Output some Job Summary
-        run: echo '### It works! :rocket:' >> $GITHUB_STEP_SUMMARY
+        run: echo '### It works!!! :rocket:' >> $GITHUB_STEP_SUMMARY
