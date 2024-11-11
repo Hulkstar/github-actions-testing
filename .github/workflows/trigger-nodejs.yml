@@ -1,0 +1,10 @@
+name: trigger-nodejs.yml
+
+on: [workflow_dispatch]
+
+jobs:
+  nodejs-example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run node.js script
+        run: node ./script/test.js
