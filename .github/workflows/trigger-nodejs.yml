@@ -10,4 +10,4 @@ jobs:
       - name: show file system
         run: ls -a
       - name: Run node.js script
-        run: node ./script/test.js
+        run: node ./scripts/test.js
