@@ -6,5 +6,7 @@ jobs:
   nodejs-example:
     runs-on: ubuntu-latest
     steps:
+      - name: show file system
+        run: ls -a
       - name: Run node.js script
         run: node ./script/test.js
