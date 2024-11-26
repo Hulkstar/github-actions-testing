@@ -1,0 +1,13 @@
+name: test-action
+description: My test action
+inputs:
+  test_input:
+    description: key
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: echo test
+      shell: bash
+      run: |
+        echo ${{inputs.test_input}}

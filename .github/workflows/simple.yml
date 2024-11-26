@@ -29,3 +29,9 @@ jobs:
     steps:
       - name: Output some Job Summary
         run: echo '### It works!!! :rocket:' >> $GITHUB_STEP_SUMMARY
+
+  fourth-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use a composite action"
+        uses: ./.github/myactions/test-action
