@@ -36,6 +36,7 @@ jobs:
   fourth-job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Use a composite action"
         uses: ./.github/test-action
         with:
