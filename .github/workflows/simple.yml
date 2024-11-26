@@ -15,7 +15,7 @@ jobs:
           node -v
           npm -v
 
-      - name: show directors (ls)
+      - name: show directors - ls command
         run: ls -a
 
       - name: end of the job
