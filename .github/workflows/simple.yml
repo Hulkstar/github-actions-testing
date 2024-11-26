@@ -34,4 +34,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Use a composite action"
-        uses: ./.github/myactions/test-action
+        uses: ./.github/test-action
+        with:
+          test_input: "Hello World Composite Action"
