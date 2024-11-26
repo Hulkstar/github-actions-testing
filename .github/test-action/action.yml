@@ -11,3 +11,7 @@ runs:
       shell: bash
       run: |
         echo ${{inputs.test_input}}
+    - name: use another action
+      uses: actions/hello-world-javascript-action@main
+      with:
+        who-to-greet: "Mike"
